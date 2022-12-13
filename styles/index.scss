@@ -1,0 +1,45 @@
+@import '../vendor/normalize.css';
+@import './modules/mixins.scss';
+@import './modules/variables/colors.scss';
+@import './modules/variables/fonts.scss';
+
+// Font variables
+@import './modules/blocks/text/__wrapper/text__wrapper.scss';
+@import './modules/blocks/text/_button/text_button.scss';
+@import './modules/blocks/text/_title/text_title.scss';
+@import './modules/blocks/text/_club/text_club.scss';
+@import './modules/blocks/text/_copyright/text_copyright.scss';
+@import './modules/blocks/text/_link/text_link.scss';
+@import './modules/blocks/text/_name/text_name.scss';
+@import './modules/blocks/text/_paragraph/text_paragraph.scss';
+
+// Header
+@import './modules/blocks/header/header.scss';
+
+// content-box
+@import './modules/blocks/content-box/content-box.scss';
+
+
+// Chess
+@import './modules/blocks/chess/chess.scss';
+@import './modules/blocks/chess/__club/chess__club.scss';
+@import './modules/blocks/chess/__title/chess__title.scss';
+@import './modules/blocks/chess/__circles/chess__circles.scss';
+
+// Chess-desk
+@import './modules/blocks/chess-desk/chess-desk.scss';
+@import'./modules/blocks/chess-desk/_blue/chess-desk_blue.scss';
+
+// Team
+@import './modules/blocks/team/team.scss';
+
+// Swiper
+@import './modules/blocks/swiper/bullet/swiper-pagination-bullet.scss';
+@import './modules/blocks/swiper/swiper-slide/__card/swiper-slide__card.scss';
+@import './modules/blocks/swiper/swiper-slide/__text/swiper-slide__text.scss';
+@import './modules/blocks/swiper/swiper-slide/__label/swiper-slide__label.scss';
+@import './modules/blocks/swiper/swiper.scss';
+@import './modules/blocks/swiper/pagination/swiper-pagination.scss';
+
+// Footer
+@import './modules/blocks/footer/footer.scss';

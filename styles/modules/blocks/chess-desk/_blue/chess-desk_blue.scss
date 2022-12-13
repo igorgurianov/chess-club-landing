@@ -1,0 +1,11 @@
+.chess-desk_blue {
+    margin-top: 182px;
+
+    @include tablet {
+        margin-top: 212px;
+    }
+
+    @include mobile {
+        margin-top: 90px;
+    }
+}

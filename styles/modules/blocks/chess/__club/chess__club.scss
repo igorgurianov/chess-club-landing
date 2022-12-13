@@ -1,0 +1,15 @@
+.chess__club {
+    display: flex;
+    background-color: $blue;
+    width: 84px;
+    height: 50px;
+    align-content: center;
+    align-items: center;
+    border-radius: 0 25px 25px 0;
+
+    @include mobile {
+        width: 63px;
+        height: 40px;
+
+    }
+}

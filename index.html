@@ -2,14 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Document</title>
 </head>
 
 <body>
+  <header class="header">
+  </header>
+  <section class="chess content-box">
+    <div class="text__wrapper">
+      <div class="chess__club">
+        <p class="text_club ">КЛУБ</p>
+      </div>
+      <h2 class="text_title chess__title">Правильные шахматы</h2>
+      <p class="text_paragraph">Приходите к&nbsp;нам, играть в&nbsp;шахматы! Сразитесь классическом поединке, блиц
+        состязании и&nbsp;бою с&nbsp;гройсмейстером.</p>
+      <img class="chess-desk chess-desk_blue" src="./images/chess-desk-item.svg" alt="Бело синяя шаматная доска">
+    </div>
+    <div class="chess__circles"></div>
+  </section>
+  <!-- Team section -->
+  <section class="team content-box">
+    <div class="text__wrapper">
+      <h2 class="text_title">Наша команда</h2>
+      <p class="text_paragraph">Лучшие шахматисты и&nbsp;шахматистки любители России, гройсмейстеры, с&nbsp;ними
+        играть&nbsp;&mdash; одно удовольствие!</p>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img src="./images/Andrey-photo.png" alt="Фото Андрея">
+            <div class="swiper-slide__label">
+              <p class="text_name swiper-slide__text">Андрей</p>
+              <p class="text_paragraph swiper-slide__text">Шахматист, писатель.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img src="./images/Nikita-photo.png" alt="Фото Никита">
+            <div class="swiper-slide__label">
+              <p class="text_name swiper-slide__text">Никита</p>
+              <p class="text_paragraph swiper-slide__text">Шахматист, кулинар.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img src="./images/Aleksey-photo.png" alt="Фото Алексей">
+            <div class="swiper-slide__label">
+              <p class="text_name swiper-slide__text">Алексей</p>
+              <p class="text_paragraph swiper-slide__text">Шахматист, геймер.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <footer class="footer"> Good byee</footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

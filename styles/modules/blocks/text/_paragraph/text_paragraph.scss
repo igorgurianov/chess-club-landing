@@ -1,0 +1,14 @@
+.text_paragraph {
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    font-weight: $regular;
+    font-size: $fontSizeM;
+    line-height: $lineHeightM;
+    color: $white;
+
+    @include mobile {
+        font-size: $fontSizeXS;
+        line-height: $lineHeightXXS;
+    }
+}

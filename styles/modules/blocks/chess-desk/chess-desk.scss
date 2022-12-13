@@ -1,0 +1,10 @@
+.chess-desk {
+    width: 416px;
+    height: 104px;
+
+    @include mobile {
+        width: 280px;
+        height: 70px;
+        margin: 0 auto;
+    }
+}
