@@ -1,0 +1,7 @@
+.popup__title {
+    margin: 50px 0 78px;
+
+    @include mobile {
+        margin: 40px 0;
+    }
+}

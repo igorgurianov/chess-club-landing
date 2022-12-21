@@ -2,17 +2,17 @@
     display: flex;
     position: absolute;
     left: -220px;
-    top: 60px;
+    top: 20px;
 
     @include tablet {
-        top: 50px;
+        top: 12px;
         left: -180px;
     }
 
     @include mobile {
         top: auto;
-        right: auto;
         bottom: -140px;
-        left: 25%;
+        left: auto;
+        right: auto
     }
 }

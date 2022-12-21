@@ -12,6 +12,20 @@
 
 <body class="page">
 
+  <!-- Popup -->
+  <section class="popup">
+    <div class="popup__container">
+      <img class="logo-icon logo-icon_small" src="./images/logo.svg" alt="Логотип в виде белой шаматной фигуры">
+      <h2 class="popup__title text_popup-header">Регистрация</h2>
+      <form name="popup_form" class="popup__input-container">
+        <input class="popup__input" type="text" name="" id="" placeholder="Имя">
+        <input class="popup__input" type="email" name="" id="" placeholder="Email">
+        <button class="popup__button btn-register btn-register_small" type="submit"
+          aria-label="Кнопка зарегистрироваться">Зарегистрироваться</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Header -->
   <header class="header">
     <img class="logo-icon logo-icon_small" src="./images/logo.svg" alt="Логотип в виде белой шаматной фигуры">
@@ -20,7 +34,8 @@
         <p class="text_link">Вступайте в клуб</p>
         <img src="./images/header-arrow.svg" alt="Навигационный указатель">
       </a>
-      <button class="btn-register btn-register_medium btn-register_small" type="button">Зарегистрироваться</button>
+      <button class="registration btn-register btn-register_medium btn-register_small"
+        type="button">Зарегистрироваться</button>
     </nav>
 
   </header>
@@ -154,12 +169,13 @@
   <!-- Footer -->
   <footer class="footer content-box">
     <img class="footer__logo logo-icon" src="./images/logo.svg" alt="Логотип в виде белой шаматной фигуры">
-    <button class="btn-register" type="button">Зарегистрироваться</button>
+    <button class="registration btn-register btn-register_small" type="button">Зарегистрироваться</button>
     <p class="footer__title text_paragraph">Шахматный клуб в Москве.</p>
     <p class="footer__copytight">&copy; Chees Club.</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="./slider-script.js"></script>
+  <script src="./popup-script.js"></script>
 </body>
 
 </html>

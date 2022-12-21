@@ -1,0 +1,11 @@
+.text_popup-header {
+    font-size: 34px;
+    line-height: 31px;
+    font-weight: $thick;
+    color: $white;
+
+    @include mobile {
+        font-size: 30px;
+        line-height: 27px;
+    }
+}

@@ -3,6 +3,9 @@
 
     @include mobile {
         display: block;
-        bottom: 30px;
     }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets {
+    bottom: 0;
 }

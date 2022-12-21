@@ -1,9 +1,13 @@
 .battles__wrapper {
     display: flex;
     justify-content: flex-end;
-    margin-top: 110px;
+    margin-top: 72px;
 
     @include tablet {
-        margin-top: 140px;
+        margin-top: 105px;
+    }
+
+    @include mobile {
+        margin-top: 60px;
     }
 }

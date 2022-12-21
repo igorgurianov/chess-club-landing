@@ -24,4 +24,3 @@ new Swiper('.swiper', {
         }
     }
 });
-new swiperTeam('.swiperttest')

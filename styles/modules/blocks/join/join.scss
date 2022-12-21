@@ -4,6 +4,7 @@
     position: relative;
     justify-content: flex-end;
     background-color: $blue;
+    padding-top: 40px;
 
     @include mobile {
         flex-direction: column;

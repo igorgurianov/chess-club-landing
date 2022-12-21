@@ -19,6 +19,17 @@
 @import './modules/blocks/text/_paragraph/text_paragraph.scss';
 @import './modules/blocks/text/__wrapper/_join/text__wrapper_join.scss';
 @import './modules/blocks/text/_content/text_content.scss';
+@import './modules/blocks/text/_popup-header/text_popup-header.scss';
+
+// Popup
+@import './modules/blocks/popup/popup.scss';
+@import './modules/blocks/popup/_opened/popup_opened.scss';
+@import './modules/blocks/popup/__container/popup__container.scss';
+@import './modules/blocks/popup/__input-container/popup__input-container.scss';
+@import './modules/blocks/popup/__button/popup__button.scss';
+@import './modules/blocks/popup/__title/popup__title.scss';
+@import './modules/blocks/popup/__input/popup__input.scss';
+
 
 // Header
 @import './modules/blocks/header/header.scss';
