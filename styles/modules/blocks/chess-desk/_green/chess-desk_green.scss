@@ -1,0 +1,9 @@
+.chess-desk_green {
+    @include tablet {
+        margin-bottom: 30px;
+    }
+
+    @include mobile {
+        margin-bottom: 0;
+    }
+}

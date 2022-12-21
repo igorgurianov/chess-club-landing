@@ -1,0 +1,11 @@
+.popup__button {
+    margin-top: 233px;
+
+    @include tablet {
+        margin-top: 223px;
+    }
+
+    @include mobile {
+        margin-top: 135px;
+    }
+}

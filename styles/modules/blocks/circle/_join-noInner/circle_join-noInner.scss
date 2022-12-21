@@ -1,0 +1,9 @@
+.circle_join-noInner {
+    display: block;
+}
+
+@media screen and (max-width: 1429px) {
+    .circle_join-noInner {
+        display: none;
+    }
+}

@@ -1,0 +1,8 @@
+.battles__circle {
+    width: 440px;
+    height: 440px;
+
+    @include mobile {
+        display: none;
+    }
+}

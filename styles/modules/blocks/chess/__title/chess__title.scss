@@ -1,0 +1,7 @@
+.chess__title {
+    display: inline-block;
+
+    @include mobile {
+        padding-top: 10px;
+    }
+}

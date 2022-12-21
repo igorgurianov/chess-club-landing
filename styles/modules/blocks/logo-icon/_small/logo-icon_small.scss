@@ -1,0 +1,6 @@
+.logo-icon_small {
+    @include mobile {
+        max-height: 36px;
+        max-width: 26px;
+    }
+}

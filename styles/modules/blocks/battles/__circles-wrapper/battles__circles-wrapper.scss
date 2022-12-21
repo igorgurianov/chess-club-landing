@@ -1,0 +1,11 @@
+.battles__circles-wrapper {
+    position: absolute;
+    bottom: -220px;
+    left: 100px;
+    z-index: 0;
+
+    @include tablet {
+        top: 795px;
+        left: -220px;
+    }
+}

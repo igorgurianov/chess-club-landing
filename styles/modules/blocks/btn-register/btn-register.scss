@@ -1,0 +1,19 @@
+.btn-register {
+    box-sizing: border-box;
+    width: 218px;
+    height: 48px;
+    padding: 14px 28px 16px;
+    background: $light-green;
+    border-radius: 8px;
+    border: none;
+    font-size: $fontSizeXXS;
+    font-weight: $thick;
+    line-height: $lineHeightXS;
+    letter-spacing: .01em;
+    color: $white;
+}
+
+.btn-register:hover {
+    background: $dark-green;
+    cursor: pointer;
+}

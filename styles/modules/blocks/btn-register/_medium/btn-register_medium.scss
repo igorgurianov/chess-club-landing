@@ -1,0 +1,8 @@
+.btn-register_medium {
+    @include tablet {
+        max-width: 184px;
+        max-height: 44px;
+        padding: 12px 22px 14px;
+        font-size: 13px;
+    }
+}
