@@ -6,4 +6,10 @@
     font-size: $fontSizeL;
     line-height: $lineHeightL;
     color: $white;
+
+    @include mobile {
+        letter-spacing: 0.055em;
+        font-size: 18px;
+        line-height: 23px;
+    }
 }

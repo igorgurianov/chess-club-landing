@@ -1,0 +1,8 @@
+.btn-register_small {
+    @include mobile {
+        max-width: 140px;
+        max-height: 30px;
+        padding: 6px 16px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,11 @@
+.join {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    background-color: $blue;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}

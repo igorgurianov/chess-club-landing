@@ -1,9 +1,14 @@
 @import '../vendor/normalize.css';
+@import '../vendor/font/NotoSans/Noto-Sans.css';
 @import './modules/mixins.scss';
 @import './modules/variables/colors.scss';
 @import './modules/variables/fonts.scss';
 
-// Font variables
+// Page
+@import './modules/blocks/page/page.scss';
+
+// Text
+@import './modules/blocks/text/_link/text_link.scss';
 @import './modules/blocks/text/__wrapper/text__wrapper.scss';
 @import './modules/blocks/text/_button/text_button.scss';
 @import './modules/blocks/text/_title/text_title.scss';
@@ -12,13 +17,20 @@
 @import './modules/blocks/text/_link/text_link.scss';
 @import './modules/blocks/text/_name/text_name.scss';
 @import './modules/blocks/text/_paragraph/text_paragraph.scss';
+@import './modules/blocks/text/__wrapper/_join/text__wrapper_join.scss';
+@import './modules/blocks/text/_content/text_content.scss';
 
 // Header
 @import './modules/blocks/header/header.scss';
+@import './modules/blocks/header/__link/header__link.scss';
+@import './modules/blocks/header/__nav/header__nav.scss';
+
+// Logo
+@import './modules/blocks/logo-icon/logo-icon.scss';
+@import './modules/blocks/logo-icon/_small/logo-icon_small.scss';
 
 // content-box
 @import './modules/blocks/content-box/content-box.scss';
-
 
 // Chess
 @import './modules/blocks/chess/chess.scss';
@@ -29,9 +41,11 @@
 // Chess-desk
 @import './modules/blocks/chess-desk/chess-desk.scss';
 @import'./modules/blocks/chess-desk/_blue/chess-desk_blue.scss';
+@import './modules/blocks/chess-desk/_green/chess-desk_green.scss';
 
 // Team
 @import './modules/blocks/team/team.scss';
+@import './modules/blocks/team/__title/team__title.scss';
 
 // Swiper
 @import './modules/blocks/swiper/bullet/swiper-pagination-bullet.scss';
@@ -40,6 +54,47 @@
 @import './modules/blocks/swiper/swiper-slide/__label/swiper-slide__label.scss';
 @import './modules/blocks/swiper/swiper.scss';
 @import './modules/blocks/swiper/pagination/swiper-pagination.scss';
+@import './modules/blocks/swiper/swiper-slide/__img/swiper-slide__img.scss';
+@import './modules/blocks/swiper/swiper-slide/swiper-slide.scss';
+@import './modules/blocks/swiper/pagination/_custom/swiper-pagination-custom.scss';
+
+// Join
+@import './modules/blocks/join/join.scss';
+@import './modules/blocks/join/__circles-wrapper/join__circles-wrapper.scss';
+
+// Circle
+@import './modules/blocks/circle/circle.scss';
+@import './modules/blocks/circle/_join-noInner/circle_join-noInner.scss';
+@import './modules/blocks/circle/__quarter/circle__quarter.scss';
+@import './modules/blocks/circle/__quarter-four/circle__quarter-four.scss';
+@import './modules/blocks/circle/__quarter-one/circle__quarter-one.scss';
+@import './modules/blocks/circle/__quarter-three/circle__quarter-three.scss';
+@import './modules/blocks/circle/__quarter-two/circle__quarter-two.scss';
+@import './modules/blocks/circle/__inner-circle/circle__inner-circle';
+@import './modules/blocks/circle/__inner-circle/_join/circle__inner-circle_join.scss';
+@import './modules/blocks/circle/__quarter-two/_join-noInner/circle__quarter-two_join-noInner.scss';
+@import './modules/blocks/circle/__quarter-two/_join-withInner/circle__quarter-two_join-withInner.scss';
+@import './modules/blocks/circle/__quarter-four/_join-noInner/circle__quarter-four_join-noInner.scss';
+@import './modules/blocks/circle/__quarter-four/_join-withInner/circle__quarter-four_join-withInner.scss';
+@import './modules/blocks/circle/__quarter-one/_join-withInner/circle__quarter-one_join-withInner.scss';
+@import './modules/blocks/circle/__quarter-three/_join-withInner/circle__quarter-three_join-withInner.scss';
+@import './modules/blocks/circle/__quarter-one/_battles/circle__quarter-one_battles.scss';
+@import './modules/blocks/circle/__quarter-two/_battles/circle__quarter-two_battles.scss';
+@import './modules/blocks/circle/__inner-circle/_battles/circle__inner-circle_battles.scss';
+
+// Battles
+@import './modules/blocks/battles/battles.scss';
+@import './modules/blocks/battles/__wrapper/battles__wrapper.scss';
+@import './modules/blocks/battles/__circle/battles__circle.scss';
+@import './modules/blocks/battles/__circles-wrapper/battles__circles-wrapper.scss';
+
+// Btn
+@import './modules/blocks/btn-register/btn-register.scss';
+@import './modules/blocks/btn-register/_medium/btn-register_medium.scss';
+@import './modules/blocks/btn-register/_small/btn-register_small.scss';
 
 // Footer
 @import './modules/blocks/footer/footer.scss';
+@import './modules/blocks/footer/__copytight/footer__copytight.scss';
+@import './modules/blocks/footer/__title/footer__title.scss';
+@import './modules/blocks/footer/__logo/footer__logo.scss';

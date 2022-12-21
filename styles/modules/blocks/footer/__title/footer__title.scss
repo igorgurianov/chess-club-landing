@@ -1,0 +1,7 @@
+.footer__title {
+    margin-top: 40px;
+
+    @include mobile {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,11 @@
+.footer__copytight {
+    margin: 0;
+    color: $soft-grey;
+    font-size: fontSizeXXS;
+    line-height: $lineHeightS;
+
+    @include mobile {
+        font-size: 12px;
+        line-height: 12px;
+    }
+}

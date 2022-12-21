@@ -1,0 +1,18 @@
+.join__circles-wrapper {
+    display: flex;
+    position: absolute;
+    left: -220px;
+    top: 60px;
+
+    @include tablet {
+        top: 50px;
+        left: -180px;
+    }
+
+    @include mobile {
+        top: auto;
+        right: auto;
+        bottom: -140px;
+        left: 25%;
+    }
+}

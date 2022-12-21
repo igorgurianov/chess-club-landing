@@ -5,6 +5,8 @@
     font-size: $fontSizeXXL;
     line-height: $lineHeightXXL;
     color: $white;
+    font-family: 'Noto Sans';
+
 
     @include mobile {
         font-size: $fontSizeXL;

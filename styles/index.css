@@ -1,6 +1,32 @@
-@import '../vendor/normalize.css'; /*Font size */
+@import '../vendor/normalize.css';
+@import '../vendor/font/NotoSans/Noto-Sans.css';
+/*Font size */
 /*Line height*/
 /* Font weight*/
+.page {
+  font-family: "Noto Sans";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  min-width: 320px;
+}
+
+.text_link {
+  letter-spacing: 0.01em;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFF;
+}
+@media screen and (max-width: 1179px) {
+  .text_link {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
 .text__wrapper {
   display: flex;
   flex-direction: column;
@@ -20,6 +46,7 @@
   font-size: 70px;
   line-height: 63px;
   color: #FFF;
+  font-family: "Noto Sans";
 }
 @media screen and (max-width: 767px) {
   .text_title {
@@ -44,6 +71,19 @@
   }
 }
 
+.text_link {
+  letter-spacing: 0.01em;
+  font-size: 15px;
+  line-height: 17px;
+  color: #FFF;
+}
+@media screen and (max-width: 1179px) {
+  .text_link {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
 .text_name {
   margin: 0;
   padding: 0;
@@ -52,6 +92,13 @@
   font-size: 22px;
   line-height: 29px;
   color: #FFF;
+}
+@media screen and (max-width: 767px) {
+  .text_name {
+    letter-spacing: 0.055em;
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 .text_paragraph {
@@ -65,8 +112,89 @@
 }
 @media screen and (max-width: 767px) {
   .text_paragraph {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 16px;
+  }
+}
+
+.text__wrapper_join {
+  padding: 91px 0;
+  max-width: 520px;
+}
+@media screen and (max-width: 1179px) {
+  .text__wrapper_join {
+    padding: 71px 0;
+    max-width: 478px;
+  }
+}
+
+.text_content {
+  max-width: none;
+  margin-bottom: 110px;
+}
+@media screen and (max-width: 1179px) {
+  .text_content {
+    margin-bottom: 140px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .text_content {
+    margin-bottom: 60px;
+  }
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 26px 160px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1179px) {
+  .header {
+    padding: 26px 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 16px 20px;
+  }
+}
+
+.header__link {
+  text-decoration: none;
+  display: flex;
+  gap: 16px;
+}
+@media screen and (max-width: 767px) {
+  .header__link {
+    display: none;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+@media screen and (max-width: 1179px) {
+  .header__nav {
+    gap: 30px;
+  }
+}
+
+.logo-icon {
+  width: 38px;
+  height: 54px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-icon_small {
+    max-height: 36px;
+    max-width: 26px;
   }
 }
 
@@ -91,11 +219,13 @@
   background-color: #000;
   position: relative;
   overflow: hidden;
+  padding-top: 34px;
 }
 
 .chess__club {
   display: flex;
   background-color: #5036E6;
+  margin-bottom: 30px;
   width: 84px;
   height: 50px;
   align-content: center;
@@ -110,19 +240,18 @@
 }
 
 .chess__title {
-  padding-top: 15px;
   display: inline-block;
 }
 @media screen and (max-width: 767px) {
   .chess__title {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }
 
 .chess__circles {
   background-image: url("../../../../../images/chess__circles_large.svg");
   position: absolute;
-  top: 0;
+  bottom: 80px;
   right: -160px;
   width: 640px;
   height: 640px;
@@ -132,6 +261,7 @@
   .chess__circles {
     background-image: url("../../../../../images/chess_circles_medium.svg");
     right: -130px;
+    bottom: 50px;
     width: 260px;
     height: 520px;
   }
@@ -139,6 +269,7 @@
 @media screen and (max-width: 767px) {
   .chess__circles {
     background-image: url("../../../../../images/chess_circles_small.svg");
+    top: 24px;
     right: 20px;
     width: 120px;
     height: 60px;
@@ -158,11 +289,11 @@
 }
 
 .chess-desk_blue {
-  margin-top: 182px;
+  margin-top: 142px;
 }
 @media screen and (max-width: 1179px) {
   .chess-desk_blue {
-    margin-top: 212px;
+    margin-top: 172px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -171,8 +302,29 @@
   }
 }
 
+@media screen and (max-width: 1179px) {
+  .chess-desk_green {
+    margin-bottom: 30px;
+  }
+}
+
 .team {
   background-color: #5036E6;
+  display: block;
+}
+@media screen and (max-width: 1179px) {
+  .team {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team {
+    padding-top: 20px;
+  }
+}
+
+.team__title {
+  width: 100%;
 }
 
 .swiper-pagination-bullet {
@@ -182,27 +334,29 @@
 }
 
 .swiper-slide__card {
-  margin: 0 auto;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 280px;
 }
 
 .swiper-slide__text {
   text-align: center;
+  max-width: none;
 }
 
 .swiper-slide__label {
-  padding: 20px 0 0;
+  padding: 30px 0 0;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
+  align-items: flex-start;
 }
-
-.swiper {
-  padding: 60px 0 40px;
+@media screen and (max-width: 767px) {
+  .swiper-slide__label {
+    align-items: center;
+    padding-top: 20px;
+    gap: 5px;
+  }
 }
 
 .swiper-pagination {
@@ -211,5 +365,298 @@
 @media screen and (max-width: 767px) {
   .swiper-pagination {
     display: block;
+    bottom: 30px;
+  }
+}
+
+.swiper-slide__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination-custom {
+  bottom: 15px;
+}
+
+.join {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  background-color: #5036E6;
+}
+@media screen and (max-width: 767px) {
+  .join {
+    flex-direction: column;
+  }
+}
+
+.join__circles-wrapper {
+  display: flex;
+  position: absolute;
+  left: -220px;
+  top: 60px;
+}
+@media screen and (max-width: 1179px) {
+  .join__circles-wrapper {
+    top: 50px;
+    left: -180px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .join__circles-wrapper {
+    top: auto;
+    right: auto;
+    bottom: -140px;
+    left: 25%;
+  }
+}
+
+.circle {
+  position: relative;
+  width: 440px;
+  height: 440px;
+  margin: 0;
+}
+@media screen and (max-width: 1179px) {
+  .circle {
+    width: 360px;
+    height: 360px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .circle {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.circle_join-noInner {
+  display: block;
+}
+
+@media screen and (max-width: 1429px) {
+  .circle_join-noInner {
+    display: none;
+  }
+}
+.circle__quarter {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.circle__quarter-four {
+  bottom: 0;
+  right: 0;
+  border-radius: 0 0 100% 0;
+}
+
+.circle__quarter-one {
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+}
+
+.circle__quarter-three {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 0 100%;
+}
+
+.circle__quarter-two {
+  top: 0;
+  right: 0;
+  border-radius: 0 100% 0 0;
+}
+
+.circle__inner-circle {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+@media screen and (max-width: 1179px) {
+  .circle__inner-circle {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .circle__inner-circle {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.circle__inner-circle_join {
+  transform: translate(50%, 50%);
+  background: linear-gradient(#FFF 50%, black 50%);
+}
+
+.circle__quarter-two_join-noInner {
+  background-color: #000;
+}
+
+.circle__quarter-two_join-withInner {
+  background-color: #009465;
+}
+
+.circle__quarter-four_join-noInner {
+  background-color: #009465;
+}
+
+.circle__quarter-four_join-withInner {
+  background-color: #FFF;
+}
+
+.circle__quarter-one_join-withInner {
+  background-color: #000;
+}
+
+.circle__quarter-three_join-withInner {
+  background-color: #009465;
+}
+
+.circle__quarter-one_battles {
+  background-color: #FFF;
+}
+
+.circle__quarter-two_battles {
+  background-color: #009465;
+}
+
+.circle__inner-circle_battles {
+  width: 220px;
+  height: 220px;
+  transform: translate(50%, 50%);
+  background-color: #000;
+}
+
+.battles {
+  background-color: #000;
+  position: relative;
+}
+
+.battles__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 110px;
+}
+@media screen and (max-width: 1179px) {
+  .battles__wrapper {
+    margin-top: 140px;
+  }
+}
+
+.battles__circle {
+  width: 440px;
+  height: 440px;
+}
+@media screen and (max-width: 767px) {
+  .battles__circle {
+    display: none;
+  }
+}
+
+.battles__circles-wrapper {
+  position: absolute;
+  top: 765px;
+  left: 100px;
+  z-index: 0;
+}
+@media screen and (max-width: 1179px) {
+  .battles__circles-wrapper {
+    top: 795px;
+    left: -220px;
+  }
+}
+
+.btn-register {
+  box-sizing: border-box;
+  width: 218px;
+  height: 48px;
+  padding: 14px 28px 16px;
+  background: #009465;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #FFF;
+}
+
+.btn-register:hover {
+  background: #066C4C;
+}
+
+@media screen and (max-width: 1179px) {
+  .btn-register_medium {
+    max-width: 184px;
+    max-height: 44px;
+    padding: 12px 22px 14px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn-register_small {
+    max-width: 140px;
+    max-height: 30px;
+    padding: 6px 16px;
+    font-size: 10px;
+  }
+}
+
+.footer {
+  background-color: #5036E6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 40px 20px;
+    gap: 10px;
+  }
+}
+
+.footer__copytight {
+  margin: 0;
+  color: #8E9199;
+  font-size: fontSizeXXS;
+  line-height: 20px;
+}
+@media screen and (max-width: 767px) {
+  .footer__copytight {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+.footer__title {
+  margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .footer__title {
+    margin-top: 20px;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=index.css.map */

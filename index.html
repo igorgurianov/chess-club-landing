@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,9 +10,22 @@
   <title>Document</title>
 </head>
 
-<body>
+<body class="page">
+
+  <!-- Header -->
   <header class="header">
+    <img class="logo-icon logo-icon_small" src="./images/logo.svg" alt="Логотип в виде белой шаматной фигуры">
+    <nav class="header__nav">
+      <a class="header__link" href="#">
+        <p class="text_link">Вступайте в клуб</p>
+        <img src="./images/header-arrow.svg" alt="Навигационный указатель">
+      </a>
+      <button class="btn-register btn-register_medium btn-register_small" type="button">Зарегистрироваться</button>
+    </nav>
+
   </header>
+
+  <!-- Chess -->
   <section class="chess content-box">
     <div class="text__wrapper">
       <div class="chess__club">
@@ -25,10 +38,11 @@
     </div>
     <div class="chess__circles"></div>
   </section>
+
   <!-- Team section -->
   <section class="team content-box">
-    <div class="text__wrapper">
-      <h2 class="text_title">Наша команда</h2>
+    <div class="text__wrapper text_content">
+      <h2 class="text_title team__title">Наша команда</h2>
       <p class="text_paragraph">Лучшие шахматисты и&nbsp;шахматистки любители России, гройсмейстеры, с&nbsp;ними
         играть&nbsp;&mdash; одно удовольствие!</p>
     </div>
@@ -39,7 +53,7 @@
         <!-- Slides -->
         <div class="swiper-slide">
           <div class="swiper-slide__card">
-            <img src="./images/Andrey-photo.png" alt="Фото Андрея">
+            <img class="swiper-slide__img" src="./images/Andrey-photo.png" alt="Фото Андрея">
             <div class="swiper-slide__label">
               <p class="text_name swiper-slide__text">Андрей</p>
               <p class="text_paragraph swiper-slide__text">Шахматист, писатель.</p>
@@ -48,7 +62,7 @@
         </div>
         <div class="swiper-slide">
           <div class="swiper-slide__card">
-            <img src="./images/Nikita-photo.png" alt="Фото Никита">
+            <img class="swiper-slide__img" src="./images/Nikita-photo.png" alt="Фото Никита">
             <div class="swiper-slide__label">
               <p class="text_name swiper-slide__text">Никита</p>
               <p class="text_paragraph swiper-slide__text">Шахматист, кулинар.</p>
@@ -57,7 +71,7 @@
         </div>
         <div class="swiper-slide">
           <div class="swiper-slide__card">
-            <img src="./images/Aleksey-photo.png" alt="Фото Алексей">
+            <img class="swiper-slide__img" src="./images/Aleksey-photo.png" alt="Фото Алексей">
             <div class="swiper-slide__label">
               <p class="text_name swiper-slide__text">Алексей</p>
               <p class="text_paragraph swiper-slide__text">Шахматист, геймер.</p>
@@ -69,8 +83,81 @@
       <div class="swiper-pagination"></div>
     </div>
   </section>
-  <footer class="footer"> Good byee</footer>
 
+  <!-- Join section -->
+  <section class="join content-box">
+    <div class="join__circles-wrapper">
+      <div class="circle circle_join-noInner">
+        <div class="circle__quarter circle__quarter-one circle__quarter-one_join-noInner"></div>
+        <div class="circle__quarter circle__quarter-two circle__quarter-two_join-noInner"></div>
+        <div class="circle__quarter circle__quarter-three circle__quarter-three_join-noInner"></div>
+        <div class="circle__quarter circle__quarter-four circle__quarter-four_join-noInner"></div>
+      </div>
+      <div class="circle join__circle-full">
+        <div class="circle__quarter circle__quarter-one circle__quarter-one_join-withInner"></div>
+        <div class="circle__quarter circle__quarter-two circle__quarter-two_join-withInner"></div>
+        <div class="circle__quarter circle__quarter-three circle__quarter-three_join-withInner"></div>
+        <div class="circle__quarter circle__quarter-four circle__quarter-four_join-withInner"></div>
+        <div class="circle__inner-circle_join circle__inner-circle"></div>
+      </div>
+    </div>
+    <div class="text__wrapper text__wrapper_join">
+      <h2 class="text_title">Хочешь в&nbsp;комаду?</h2>
+      <p class="text_paragraph">Свяжись с&nbsp;нами и&nbsp;мы&nbsp;обсудим все детали присоеденения к&nbsp;команде.</p>
+    </div>
+  </section>
+
+  <!-- Battles -->
+  <section class="battles content-box">
+    <div class="text__wrapper text_content">
+      <h2 class="text_title">Сражения</h2>
+      <p class="text_paragraph">Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои навыки —
+        сыграйте с нашими шахматистами.</p>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img class="swiper-slide__img" src="./images/Battles-img-1.png" alt="Фото шахматистов за столом">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img class="swiper-slide__img" src="./images/Battles-img-2.png" alt="Фото шаматной доски вблизи">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__card">
+            <img class="swiper-slide__img" src="./images/Battles-img-3.png" alt="Фото доски с шаматными часамиы">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination_custom"></div>
+    </div>
+    <div class="battles__circles-wrapper">
+      <div class="battles__circle circle">
+        <div class="circle__quarter circle__quarter-one circle__quarter-one_battles"></div>
+        <div class="circle__quarter circle__quarter-two circle__quarter-two_battles"></div>
+        <div class="circle__quarter circle__quarter-three circle__quarter-three_join-withInner"></div>
+        <div class="circle__quarter circle__quarter-four circle__quarter-four_join-withInner"></div>
+        <div class="circle__inner-circle_battles circle__inner-circle"></div>
+      </div>
+    </div>
+    <div class="battles__wrapper">
+      <img class="chess-desk chess-desk_green" src="./images/battles-desk-item.svg" alt="Бело зеленая шаматная доска">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer content-box">
+    <img class="footer__logo logo-icon" src="./images/logo.svg" alt="Логотип в виде белой шаматной фигуры">
+    <button class="btn-register" type="button">Зарегистрироваться</button>
+    <p class="footer__title text_paragraph">Шахматный клуб в Москве.</p>
+    <p class="footer__copytight">&copy; Chees Club.</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
 </body>
