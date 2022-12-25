@@ -1,0 +1,19 @@
+.join__content {
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    padding: 60px 160px;
+    max-width: 1440px;
+    box-sizing: border-box;
+
+    @include tablet {
+        padding: 6px 50px 10px 50px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        padding: 20px;
+    }
+}

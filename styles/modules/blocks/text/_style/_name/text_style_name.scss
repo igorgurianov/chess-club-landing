@@ -1,0 +1,15 @@
+.text_style_name {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: $regular;
+    font-size: $fontSizeL;
+    line-height: $lineHeightL;
+    color: $white;
+    letter-spacing: 0.055em;
+
+    @include mobile {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}

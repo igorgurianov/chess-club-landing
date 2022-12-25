@@ -1,5 +1,5 @@
 @import '../vendor/normalize.css';
-@import '../vendor/font/NotoSans/Noto-Sans.css';
+@import '../vendor/fonts/NotoSans/Noto-Sans.css';
 @import './modules/mixins.scss';
 @import './modules/variables/colors.scss';
 @import './modules/variables/fonts.scss';
@@ -8,18 +8,14 @@
 @import './modules/blocks/page/page.scss';
 
 // Text
-@import './modules/blocks/text/_link/text_link.scss';
-@import './modules/blocks/text/__wrapper/text__wrapper.scss';
-@import './modules/blocks/text/_button/text_button.scss';
-@import './modules/blocks/text/_title/text_title.scss';
-@import './modules/blocks/text/_club/text_club.scss';
-@import './modules/blocks/text/_copyright/text_copyright.scss';
-@import './modules/blocks/text/_link/text_link.scss';
-@import './modules/blocks/text/_name/text_name.scss';
-@import './modules/blocks/text/_paragraph/text_paragraph.scss';
-@import './modules/blocks/text/__wrapper/_join/text__wrapper_join.scss';
-@import './modules/blocks/text/_content/text_content.scss';
-@import './modules/blocks/text/_popup-header/text_popup-header.scss';
+@import './modules/blocks/text/_style/_club/text_style_club.scss';
+@import './modules/blocks/text/_style/_content/text_style_content.scss';
+@import './modules/blocks/text/_style/_link/text_style_link.scss';
+@import './modules/blocks/text/_style/_name/text_style_name.scss';
+@import './modules/blocks/text/_style/_paragraph/text_style_paragraph.scss';
+@import './modules/blocks/text/_style/_popup-header/text_style_popup-header.scss';
+@import './modules/blocks/text/_style/_popup-placeholder/text_style_popup-placeholder.scss';
+@import './modules/blocks/text/_style/_title/text_style_title.scss';
 
 // Popup
 @import './modules/blocks/popup/popup.scss';
@@ -35,6 +31,7 @@
 @import './modules/blocks/header/header.scss';
 @import './modules/blocks/header/__link/header__link.scss';
 @import './modules/blocks/header/__nav/header__nav.scss';
+@import './modules/blocks/header/__content/header__content.scss';
 
 // Logo
 @import './modules/blocks/logo-icon/logo-icon.scss';
@@ -42,12 +39,15 @@
 
 // content-box
 @import './modules/blocks/content-box/content-box.scss';
+// content
+@import './modules/blocks/content/content.scss';
+
 
 // Chess
 @import './modules/blocks/chess/chess.scss';
 @import './modules/blocks/chess/__club/chess__club.scss';
 @import './modules/blocks/chess/__title/chess__title.scss';
-@import './modules/blocks/chess/__circles/chess__circles.scss';
+@import './modules/blocks/chess/__content/chess__content.scss';
 
 // Chess-desk
 @import './modules/blocks/chess-desk/chess-desk.scss';
@@ -57,21 +57,29 @@
 // Team
 @import './modules/blocks/team/team.scss';
 @import './modules/blocks/team/__title/team__title.scss';
+@import './modules/blocks/team/__content/team__content.scss';
 
 // Swiper
-@import './modules/blocks/swiper/bullet/swiper-pagination-bullet.scss';
-@import './modules/blocks/swiper/swiper-slide/__card/swiper-slide__card.scss';
-@import './modules/blocks/swiper/swiper-slide/__text/swiper-slide__text.scss';
-@import './modules/blocks/swiper/swiper-slide/__label/swiper-slide__label.scss';
-@import './modules/blocks/swiper/swiper.scss';
-@import './modules/blocks/swiper/pagination/swiper-pagination.scss';
-@import './modules/blocks/swiper/swiper-slide/__img/swiper-slide__img.scss';
-@import './modules/blocks/swiper/swiper-slide/swiper-slide.scss';
-@import './modules/blocks/swiper/pagination/_custom/swiper-pagination-custom.scss';
+@import '../vendor/swiper/swiper.scss';
+@import '../vendor/swiper/bullet/swiper-pagination-bullet.scss';
+@import '../vendor/swiper/pagination/_custom/swiper-pagination-custom.scss';
+@import '../vendor/swiper/pagination/swiper-pagination.scss';
+@import '../vendor/swiper/swiper-slide/swiper-slide.scss';
+@import '../vendor/swiper/swiper-slide/__card/swiper-slide__card.scss';
+@import '../vendor/swiper/swiper-slide/__img/swiper-slide__img.scss';
+@import '../vendor/swiper/swiper-slide/__label/swiper-slide__label.scss';
+@import '../vendor/swiper/swiper-slide/__text/swiper-slide__text.scss';
 
 // Join
 @import './modules/blocks/join/join.scss';
 @import './modules/blocks/join/__circles-wrapper/join__circles-wrapper.scss';
+@import './modules/blocks/join/__content/join__content.scss';
+@import './modules/blocks/join/__title/join__title.scss';
+@import './modules/blocks/join/__paragraph/join__paragraph.scss';
+@import './modules/blocks/join/__text-container/join__text-container.scss';
+
+// text-wrapper
+@import './modules/blocks/text-wrapper/text-wrapper.scss';
 
 // Circle
 @import './modules/blocks/circle/circle.scss';
@@ -89,8 +97,6 @@
 @import './modules/blocks/circle/__quarter-four/_join-withInner/circle__quarter-four_join-withInner.scss';
 @import './modules/blocks/circle/__quarter-one/_join-withInner/circle__quarter-one_join-withInner.scss';
 @import './modules/blocks/circle/__quarter-three/_join-withInner/circle__quarter-three_join-withInner.scss';
-@import './modules/blocks/circle/__quarter-one/_battles/circle__quarter-one_battles.scss';
-@import './modules/blocks/circle/__quarter-two/_battles/circle__quarter-two_battles.scss';
 @import './modules/blocks/circle/__inner-circle/_battles/circle__inner-circle_battles.scss';
 
 // Battles
@@ -98,6 +104,7 @@
 @import './modules/blocks/battles/__wrapper/battles__wrapper.scss';
 @import './modules/blocks/battles/__circle/battles__circle.scss';
 @import './modules/blocks/battles/__circles-wrapper/battles__circles-wrapper.scss';
+@import './modules/blocks/battles/__content/battles__content.scss';
 
 // Btn
 @import './modules/blocks/btn-register/btn-register.scss';

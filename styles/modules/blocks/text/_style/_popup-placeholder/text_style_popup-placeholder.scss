@@ -1,0 +1,12 @@
+.text_style_popup-placeholder {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: $regular;
+    letter-spacing: 0.01em;
+    color: $white;
+
+    @include mobile {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

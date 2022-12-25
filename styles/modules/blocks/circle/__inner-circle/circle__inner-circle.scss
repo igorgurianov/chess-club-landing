@@ -4,6 +4,7 @@
     height: 220px;
     margin: 0 auto;
     border-radius: 100%;
+    z-index: 2;
 
     @include tablet {
         width: 180px;
