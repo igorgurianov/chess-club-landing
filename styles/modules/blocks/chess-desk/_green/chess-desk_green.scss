@@ -1,9 +1,13 @@
 .chess-desk_green {
+    background-image: url('../../../../../images/battles-desk-item.svg');
+    margin: 0 160px 0 auto;
+
     @include tablet {
-        margin-bottom: 30px;
+        margin: 44px 50px 30px auto;
     }
 
     @include mobile {
-        margin-bottom: 0;
+        background-size: 280px 70px;
+        margin: 60px auto 0;
     }
 }

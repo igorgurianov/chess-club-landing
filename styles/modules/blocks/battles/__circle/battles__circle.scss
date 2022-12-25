@@ -6,3 +6,25 @@
         display: none;
     }
 }
+
+.battles__circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100% 0 0 0;
+    background-color: $white;
+    width: 50%;
+    height: 50%;
+}
+
+.battles__circle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 100% 0 0;
+    background-color: $light-green;
+    width: 50%;
+    height: 50%;
+}

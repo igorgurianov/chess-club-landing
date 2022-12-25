@@ -1,0 +1,14 @@
+.text_style_content {
+    max-width: none;
+    margin-bottom: 110px;
+    padding: 0 160px;
+
+
+    @include tablet {
+        margin-bottom: 140px;
+    }
+
+    @include mobile {
+        margin-bottom: 60px;
+    }
+}

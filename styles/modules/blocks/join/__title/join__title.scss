@@ -1,0 +1,12 @@
+.join__title {
+    max-width: 520px;
+    margin-top: 81px;
+
+    @include tablet {
+        margin-top: 60px;
+    }
+
+    @include mobile {
+        margin-top: 15px;
+    }
+}

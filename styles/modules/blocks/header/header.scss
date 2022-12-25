@@ -1,18 +1,6 @@
 .header {
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding: 26px 160px;
     background-color: $black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include tablet {
-        padding: 26px 50px;
-    }
-
-    @include mobile {
-        padding: 16px 20px;
-    }
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }

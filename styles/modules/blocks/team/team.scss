@@ -1,12 +1,3 @@
 .team {
     background-color: $blue;
-    display: block;
-
-    @include tablet {
-        padding-top: 50px;
-    }
-
-    @include mobile {
-        padding-top: 20px;
-    }
 }

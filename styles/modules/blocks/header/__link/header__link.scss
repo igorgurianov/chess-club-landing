@@ -1,9 +1,19 @@
 .header__link {
+    width: 154px;
     text-decoration: none;
-    display: flex;
-    gap: 16px;
+    background-image: url('../../../../../images/header-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @include tablet {
+        width: 135px;
+    }
 
     @include mobile {
         display: none;
     }
+}
+
+.header__link:hover {
+    opacity: .6;
 }

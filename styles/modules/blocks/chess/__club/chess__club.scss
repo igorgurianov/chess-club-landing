@@ -1,8 +1,8 @@
 .chess__club {
     display: flex;
     background-color: $blue;
-    margin-bottom: 30px;
     width: 84px;
+    box-sizing: border-box;
     height: 50px;
     align-content: center;
     align-items: center;

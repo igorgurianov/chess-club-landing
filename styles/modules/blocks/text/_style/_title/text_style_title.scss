@@ -1,0 +1,15 @@
+.text_style_title {
+    margin: 0;
+    padding: 0;
+    font-weight: $thick;
+    font-size: $fontSizeXXL;
+    line-height: $lineHeightXXL;
+    color: $white;
+    font-family: 'Noto Sans';
+
+
+    @include mobile {
+        font-size: $fontSizeXL;
+        line-height: $lineHeightXL;
+    }
+}

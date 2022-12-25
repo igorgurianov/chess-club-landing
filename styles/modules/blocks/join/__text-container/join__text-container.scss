@@ -1,0 +1,15 @@
+.join__text-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    width: 520px;
+
+    @include tablet {
+        width: 478px;
+    }
+
+    @include mobile {
+        width: 100%;
+        padding: 0;
+    }
+}

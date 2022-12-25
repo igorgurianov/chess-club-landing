@@ -1,0 +1,11 @@
+.swiper {
+    padding: 110px 160px;
+
+    @include tablet {
+        padding: 140px 50px 100px;
+    }
+
+    @include mobile {
+        padding: 40px 20px;
+    }
+}

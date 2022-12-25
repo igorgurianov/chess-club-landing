@@ -1,6 +1,16 @@
 .chess {
     background-color: $black;
-    position: relative;
-    overflow: hidden;
-    padding-top: 34px;
+    background-image: url('../../../../../images/chess__circles_large.svg');
+    background-position: top 35% right 0%;
+    background-repeat: no-repeat;
+
+    @include tablet {
+        background-image: url('../../../../../images/chess_circles_medium.svg');
+        background-position: top 80% right 0%;
+    }
+
+    @include mobile {
+        background-image: url('../../../../../images/chess_circles_small.svg');
+        background-position: top 6% right 10%;
+    }
 }
